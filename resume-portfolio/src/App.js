@@ -1,4 +1,6 @@
-import Header from './components/Header';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Navbar from './components/Navbar';
 import About from './components/About';
 import Contact from './components/Contact';
 import Education from './components/Education';
@@ -7,13 +9,17 @@ import './App.css';
 
 function App() {
   return (
-    <div>
-      <Header />
-      <About />
-      <Education />
-      <Experience />
-      <Contact />
-    </div>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route exact path="/" element={<About />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/education" element={<Education />} />
+        <Route path="/experience" element={<Experience />} />
+        <Route path="/contact" element={<Contact />} />
+        {/* Add other routes here */}
+      </Routes>
+    </Router>
   );
 }
 
