@@ -1,0 +1,15 @@
+/* Add basic styling here */
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: center;
+}
+
+section {
+    margin: 20px;
+    padding: 10px;
+}

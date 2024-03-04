@@ -1,11 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My Personal Webpage</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
 </head>
 <body>
-  <h1>Welcome to My Personal Webpage</h1>
-  <p>This is a paragraph on my website!</p>
-  <!-- Add more content as you like -->
+    <div id="app">
+        <header-component></header-component>
+        <about-component></about-component>
+        <experience-component></experience-component>
+        <education-component></education-component>
+        <contact-component></contact-component>
+    </div>
+
+    <script src="app.js"></script>
 </body>
 </html>
