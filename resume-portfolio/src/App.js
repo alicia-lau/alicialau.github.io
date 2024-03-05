@@ -1,25 +1,25 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Home from './components/Home';
+import LandingPage from './components/LandingPage';
 import About from './components/About';
-import Contact from './components/Contact';
-import Education from './components/Education';
-import Experience from './components/Experience';
+import Projects from './components/Projects';
 import './App.css';
 
 function App() {
   return (
     <Router>
       <Navbar />
-      <Routes>
-        <Route exact path="/home" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/education" element={<Education />} />
-        <Route path="/experience" element={<Experience />} />
-        <Route path="/contact" element={<Contact />} />
-        {/* Add other routes here */}
-      </Routes>
+      <div className='flex h-screen justify-center items-center font-sans pt-36'>
+        <div className='max-w-6xl mx-auto px-4 pt-4'>
+          <Routes>
+            <Route exact path="/home" element={<LandingPage />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/projects" element={<Projects />} />
+            {/* Add other routes here */}
+          </Routes>
+        </div>
+      </div>
     </Router>
   );
 }
