@@ -20,10 +20,10 @@ function Navbar() {
 
             {/* Primary Nav Menu */}
             <div className="hidden md:flex items-center space-x-1">
-                <a href="home" className="py-5 px-3 hover:bg-gray-700">Home</a>
-                <a href="about" className="py-5 px-3 hover:bg-gray-700">About</a>
-                <a href="projects" className="py-5 px-3 hover:bg-gray-700">Projects</a>
-                {/* More nav items */}
+              <a href="/resume-portfolio" className="py-5 px-3 hover:bg-gray-700">Home</a>
+              <a href="/resume-portfolio/about" className="py-5 px-3 hover:bg-gray-700">About</a>
+              <a href="/resume-portfolio/projects" className="py-5 px-3 hover:bg-gray-700">Projects</a>
+              {/* More nav items */}
             </div>
             </div>
 
