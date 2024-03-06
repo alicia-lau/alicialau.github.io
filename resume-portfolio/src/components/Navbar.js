@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,9 +21,9 @@ function Navbar() {
 
             {/* Primary Nav Menu */}
             <div className="hidden md:flex items-center space-x-1">
-              <a href="/resume-portfolio" className="py-5 px-3 hover:bg-gray-700">Home</a>
-              <a href="/resume-portfolio/about" className="py-5 px-3 hover:bg-gray-700">About</a>
-              <a href="/resume-portfolio/projects" className="py-5 px-3 hover:bg-gray-700">Projects</a>
+              <Link to="/" className="py-5 px-3 hover:bg-gray-700">Home</Link>
+              <Link to="/about" className="py-5 px-3 hover:bg-gray-700">About</Link>
+              <Link to="/projects" className="py-5 px-3 hover:bg-gray-700">Projects</Link>
               {/* More nav items */}
             </div>
             </div>
