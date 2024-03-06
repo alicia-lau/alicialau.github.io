@@ -4,7 +4,7 @@ import IconGrid from './IconGrid';
 const About = () => {
     return (
         <div className='my-8'>
-            <h2 className='text-2xl font-bold mb-4'>About Me</h2>
+            <h2 className='text-2xl font-bold mb-4 pt-64'>About Me</h2>
             <div className="border-b-2 border-gray-300"></div> {/* Divider Line */}
             <p className='mt-4 text-lg text-gray-600'>
                 Hi, I'm Alicia! Trained as a mechanical engineer and fueled by a passion for software engineering, I hold a Bachelor's of Science in Mechanical Engineering, complemented by a minor in Japanese from the University of Rochester.
