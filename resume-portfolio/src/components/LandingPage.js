@@ -4,9 +4,9 @@ import { MdEmail } from 'react-icons/md';
 
 const LandingPage = () => {
     return (
-        <div className="flex h-screen">
+        <div className="flex" style={{ height: 'calc(100vh - 160px)', overflow: 'hidden' }}>
         <div className="flex-1 flex items-center justify-start p-8">
-            <div>
+            <div className='m-auto p-8'>
             <h1 className="text-4xl font-bold mb-4">Alicia Lau</h1>
             <div className="flex justify-left space-x-4">
                 {/* LinkedIn Icon */}
@@ -35,7 +35,8 @@ const LandingPage = () => {
                 </a>
 
             </div>
-            <p className="text-xl mb-8 pt-4">A former mechanical engineer turned full stack software engineer at Capital One, I bring a blend of technical diversity, a passion for learning, and creativity to the evolving tech landscape.</p>
+            <p className="text-xl mb-8 pt-4 text-left">
+                A former mechanical engineer turned full stack software engineer at Capital One, I bring a blend of technical diversity, a passion for learning, and creativity to the evolving tech landscape.</p>
             </div>
         </div>
         </div>

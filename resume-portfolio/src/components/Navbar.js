@@ -12,10 +12,10 @@ function Navbar() {
     <nav className="bg-gray-800 text-white fixed top-0 w-full">
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex justify-between items-center">
-        {/* Logo or Brand */}
+            {/* Logo or Brand */}
             <div className='flex items-center'>
                 <a href="home" className="py-5 px-2 text-blue-200 hover:text-blue-400">
-                <span className="font-bold">AL</span>
+                <img src={`${process.env.PUBLIC_URL}/alicia-favicon-light.svg`} alt="Logo" className="h-8 w-8" />
                 </a>
             </div>
 
