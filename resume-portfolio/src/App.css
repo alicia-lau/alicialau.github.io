@@ -28,6 +28,33 @@
   color: #61dafb;
 }
 
+.main-container {
+  padding-top: calc(360px + 1rem); /* Adjust 64px to your navbar's height */
+}
+
+.typing-animation {
+  overflow: hidden;
+  border-right: .15em solid orange; /* Cursor color */
+  white-space: nowrap;
+  letter-spacing: .10em;
+  animation: typing 3.5s steps(12, end) infinite, blink-caret .75s step-end infinite;
+}
+
+/* Typing and erasing */
+@keyframes typing {
+  0%, 100% { width: 0 }
+  50% { width: 100% }
+}
+
+/* Cursor animations */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: purple; }
+}
+
+
+
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
